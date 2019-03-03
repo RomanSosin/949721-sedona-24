@@ -6,10 +6,58 @@ body {
 font-family: "PT Sans", Arial, sans-serif;
 font-size: 14px;
 line-height: 21px;
-font-weight: 400px;
+font-weight: 400;
 color: #000000;
 text-transform: uppercase;
 
     /*Фон*/
 background-color: #ffffff;
 }
+
+    /*Описываем глобальные стили*/
+
+a {
+    text-decoration: none;
+}
+
+    /*блок Header*/
+.main-navigation {
+font-size: 14px;
+line-height: 26px;
+font-weight: 700;
+color: #000000;
+}
+
+.site-navigation {
+    /*Убираем маркеры из списков*/
+list-style: none; 
+}
+
+.site-navigation a {
+    /*Устанавливаем цвет ссылок*/
+color: #000000;
+}
+
+.site-navigation a:hover {
+color: #81b3d2; 
+}
+
+.site-navigation a:focus {
+color: rgba(0, 0, 0, 0.3);
+}
+
+.index-wallpaper {
+    height: 1200px;
+    weight: 800px;
+    background-color: #e4f1fa;
+    background-image:
+        url("img/index-background-photo.jpg");
+        background-size: contain;
+    /*Contain 
+    - пропорции изображения сохраняются;
+    - изображению задаются максимально возможные размеры, при которых оно и по ширине, и по высоте полностью помещается в границы фона;
+    - изображение может не закрывать всю фоновую область блока, если пропорции изображения и блока разные.*/
+        background-position: top center;
+        background-repeat: no-repeat;
+}
+
