@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+
+    /*Свойство параметров шрифта*/
+
+font-family: "PT Sans", Arial, sans-serif;
+font-size: 14px;
+line-height: 21px;
+font-weight: 400px;
+color: #000000;
+text-transform: uppercase;
+
+    /*Фон*/
+background-color: #ffffff;
+}
