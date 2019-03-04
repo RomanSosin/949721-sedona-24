@@ -22,13 +22,18 @@ a {
 }
 
 h3 {
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: 700;
-    text-align: center;
+font-size: 21px;
+line-height: 21px;
+font-weight: 700;
+text-align: center;
 
     /*Устанавливаем ширину контейнера для правильных переносов*/
-    width: 155px;
+width: 155px;
+}
+
+    /* Устанавливаем наследование шрифтов в поля ввода формы*/
+input {
+font: inherit;
 }
 
     /*блок Header*/
@@ -94,18 +99,43 @@ list-style: none;
 
     /*Выравниваем текст и задаем ширину контейнера для переносов*/
 .advantage-text {
-    text-align: center;
+text-align: center;
 
-    width: 285px;
+width: 285px;
 }
 
 
 .tips {
-    list-style: none;
+list-style: none;
 }
 
 .tips-text {
-    text-align: center;
+text-align: center;
 
-    width: 290px;
+width: 290px;
+}
+
+.find-hotel {
+text-align: center;
+}
+
+.question {
+font-size: 21px;
+font-weight: 700;
+line-height: 26px;
+}
+
+    /* Стилизация формы бронирования*/
+.find-hotel-index-filter {
+background-color: grey;
+    /*Определяем позиционирование блока*/
+position: absolute;
+}
+.find-hotel-index {
+color: #ffffff;
+font-size: 18px;
+line-height: 21px;
+background-color: brown;
+
+padding: 30px;
 }
