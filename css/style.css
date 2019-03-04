@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    width:1200px;
 
     /*Свойство параметров шрифта*/
 
@@ -11,13 +12,23 @@ color: #000000;
 text-transform: uppercase;
 
     /*Фон*/
-background-color: #ffffff;
+background-color: #f2f2f2;
 }
 
     /*Описываем глобальные стили*/
 
 a {
     text-decoration: none;
+}
+
+h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: center;
+
+    /*Устанавливаем ширину контейнера для правильных переносов*/
+    width: 155px;
 }
 
     /*блок Header*/
@@ -47,8 +58,8 @@ color: rgba(0, 0, 0, 0.3);
 }
 
 .index-wallpaper {
-    height: 1200px;
-    weight: 800px;
+height: 800px;
+width: 1200px;
     background-color: #e4f1fa;
     background-image:
         url("img/index-background-photo.jpg");
@@ -61,3 +72,40 @@ color: rgba(0, 0, 0, 0.3);
         background-repeat: no-repeat;
 }
 
+    /*Стилизауем блок Advantages*/
+.advantages-heading {
+font-size: 21px;
+line-height: 26px;
+font-weight: 700;
+text-align: center;
+    
+    /*Устанавливаем ширину для правильных переносов текста*/
+    width: 440px   
+}
+
+.advantages-heading p {
+font-size: 14px;
+line-height: 26px;
+}
+
+.advantages {
+list-style: none;
+}
+
+    /*Выравниваем текст и задаем ширину контейнера для переносов*/
+.advantage-text {
+    text-align: center;
+
+    width: 285px;
+}
+
+
+.tips {
+    list-style: none;
+}
+
+.tips-text {
+    text-align: center;
+
+    width: 290px;
+}
