@@ -36,6 +36,7 @@ input {
 font: inherit;
 }
 
+
     /*блок Header*/
 .main-navigation {
 font-size: 14px;
@@ -120,22 +121,82 @@ text-align: center;
 }
 
 .question {
-font-size: 21px;
+font-size: 30px;
 font-weight: 700;
-line-height: 26px;
+line-height: 36px;
+}
+
+.book-text {
+font-size: 14px;
+line-height: 24px;
 }
 
     /* Стилизация формы бронирования*/
 .find-hotel-index-filter {
-background-color: grey;
+background-color: #ffffff;
     /*Определяем позиционирование блока*/
 position: absolute;
+width: 500px;
+height: 500px;
+left: 50%;
 }
+
+    /*Стилизация шапки формы поиска отеля*/
 .find-hotel-index {
 color: #ffffff;
 font-size: 18px;
 line-height: 21px;
-background-color: brown;
+text-align: center;
 
-padding: 30px;
+background-color: #766357;
+padding: 20px;
+
+}
+
+/*Жирный шрифт для подписей форм*/
+label {
+    font-weight: 700;
+}
+
+.find-hotel-index-form input {
+font-size: 14px;
+line-height: 26px;
+font-weight: 700;
+
+background-color: #f2f2f2;
+}
+
+    /*Стилизуем кнопку Найти в форме поиска отеля*/
+.button.button-find {
+font-family: inherit;
+text-transform: uppercase;
+font-size: 21px;
+line-height: 26px;
+font-weight: 700;
+color: #ffffff;
+vertical-align: center;
+text-align: center;
+
+background-color: #81b3d2;
+    /*Убираем рамки у кнопки по умолчанию*/
+border: none;
+}
+
+
+    /*Стилизуем Футер*/
+.social-teg {
+font-size: 21px;
+line-height: 24px;
+
+}
+
+.main-footer ul {
+list-style: none;
+text-align: center;
+}
+
+
+.footer-copyright span {
+font-size: 14px;
+line-height: 26px;
 }
