@@ -150,13 +150,32 @@ text-align: center;
 
 background-color: #766357;
 padding: 20px;
-
 }
 
-/*Жирный шрифт для подписей форм*/
-label {
-    font-weight: 700;
+    /*Жирный шрифт для подписей форм*/
+.find-hotel-index-form input {
+font-weight: 700;
+
+background-color: #f2f2f2;
 }
+
+    /*Цвет фона полей форм при наведении и фокусе*/
+.find-hotel-index-form input:hover {
+background-color: #ebebeb;
+}
+
+.find-hotel-index-form input:focus {
+    background-color: #ffffff;
+}
+
+    /*Цвет фона кнопок форм при наведении и фокусе*/
+button button-minus,
+button button-plus {
+
+
+}
+}
+
 
 .find-hotel-index-form input {
 font-size: 14px;
@@ -166,7 +185,7 @@ font-weight: 700;
 background-color: #f2f2f2;
 }
 
-    /*Стилизуем кнопку Найти в форме поиска отеля*/
+    /*Стилизуем кнопку "Найти" в форме поиска отеля*/
 .button.button-find {
 font-family: inherit;
 text-transform: uppercase;
@@ -180,6 +199,15 @@ text-align: center;
 background-color: #81b3d2;
     /*Убираем рамки у кнопки по умолчанию*/
 border: none;
+}
+    /*Задаем состояние кнопки при наведении и нажатии*/
+.button.button-find:hover {
+background-color: #669ec0;
+}
+.button.button-find:active {
+color: rgba(0, 0, 0, 0.3);
+
+background-color: #5496bd;
 }
 
 
@@ -200,3 +228,5 @@ text-align: center;
 font-size: 14px;
 line-height: 26px;
 }
+
+/*Стилизация лого html academy при наведении*/
