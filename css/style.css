@@ -230,3 +230,22 @@ line-height: 26px;
 }
 
 /*Стилизация лого html academy при наведении*/
+
+.offers-hosts {
+list-style:none;
+}
+
+.offers-hosts h3 {
+font-size: 21px;
+line-height: 26px;
+color: #000000;
+}
+
+/*Задаем состояние названий отелей*/
+.offers-hosts h3:hover {
+color: #81b3d2;
+}
+
+.offers-hosts h3:active {
+color: rgba(0, 0, 0, 0.3);
+}
