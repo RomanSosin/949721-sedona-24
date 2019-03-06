@@ -249,3 +249,14 @@ color: #81b3d2;
 .offers-hosts h3:active {
 color: rgba(0, 0, 0, 0.3);
 }
+
+.offers-hosts a:not(.offers-image) {
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+
+    
+
+    background-color: #81b3d2;
+    background-size: 50px 40px;
+}
