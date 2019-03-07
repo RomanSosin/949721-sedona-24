@@ -12,7 +12,7 @@ color: #000000;
 text-transform: uppercase;
 
     /*Фон*/
-background-color: #f2f2f2;
+background-color: #ffffff;
 }
 
     /*Описываем глобальные стили*/
@@ -27,9 +27,19 @@ line-height: 21px;
 font-weight: 700;
 text-align: center;
 
-    /*Устанавливаем ширину контейнера для правильных переносов*/
-width: 155px;
+/*Устанавливаем размер контейнера для правильных переносов*/
+width: 160px;
 }
+
+.button {
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    vertical-align: center;
+    text-align: center;
+}
+
 
     /* Устанавливаем наследование шрифтов в поля ввода формы*/
 input {
@@ -171,9 +181,6 @@ background-color: #ebebeb;
     /*Цвет фона кнопок форм при наведении и фокусе*/
 button button-minus,
 button button-plus {
-
-
-}
 }
 
 
@@ -205,7 +212,7 @@ border: none;
 background-color: #669ec0;
 }
 .button.button-find:active {
-color: rgba(0, 0, 0, 0.3);
+color: rgba(255, 255, 255, 0.3);
 
 background-color: #5496bd;
 }
@@ -250,13 +257,38 @@ color: #81b3d2;
 color: rgba(0, 0, 0, 0.3);
 }
 
-.offers-hosts a:not(.offers-image) {
-    font-size: 14px;
-    line-height: 21px;
-    color: #ffffff;
+    /* Стилизуем кнопку "Забронировать"*/
+.button-book {
+font-size: 14px;
+line-height: 21px;
 
-    
+background-color: #766357;
+}
 
-    background-color: #81b3d2;
-    background-size: 50px 40px;
+.button-book:hover {
+background-color: #604e43;
+}
+.button-book:active {
+background-color: #503e33;
+color: rgba(255, 255, 255, 0.3);
+}
+
+    /* Стилизуем кнопку "Подробнее"*/
+.button-about {
+font-size: 14px;
+line-height: 21px;
+
+background-color: #81b3d2;
+}
+
+.button-about:hover {
+background-color: #669ec0;
+}
+.button-about:active {
+background-color: #669ec0;
+color: rgba(255, 255, 255, 0.3);
+}
+
+.rating {
+background-color: #f2f2f2;
 }
