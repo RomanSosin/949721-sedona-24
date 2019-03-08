@@ -115,6 +115,12 @@ text-align: center;
 width: 285px;
 }
 
+ /*Задаем цвет фона блоку с преимущствами*/
+
+ .advantages-background {
+     background-color: #eeeeee;
+ }
+
 
 .tips {
 list-style: none;
@@ -125,6 +131,7 @@ text-align: center;
 
 width: 290px;
 }
+
 
 .find-hotel {
 text-align: center;
