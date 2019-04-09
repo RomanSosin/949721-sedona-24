@@ -310,14 +310,16 @@ background-color: #f2f2f2;
 
 .main-navigation {
 border: 1px dotted red;
+display: flex;
 }
 
-.main-header-logo {
+.main-header-logo imng {
 border: 1px dotted red;  
 }
 
 .site-navigation {
 display: flex;
+flex-wrap: wrap;
 justify-content: space-between;
 
 padding-top: 16px;
@@ -338,4 +340,16 @@ padding: 0;
 
 /* Временно для сетки */
 border: 2px dotted red;
+}
+
+.column-1 {
+    width: 400px;
+}
+
+.column-2 {
+    width:290px;
+}
+
+.column-3 {
+    width: 400px;
 }
