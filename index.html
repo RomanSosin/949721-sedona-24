@@ -8,8 +8,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+  <div class="container">
 <header class="main-header">
-  <nav class="main-navigation container">
+  <nav class="main-navigation">
     <a class="main-header-logo column-2">
       <img src="img/index/index-logo.svg" width="140" height="72" alt="Логотип города Седона">
     </a>
@@ -23,34 +24,40 @@
   </ul>
   </nav>
 </header>
-<main class="container">
+<main class="container-main">
+
   <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
   <section class="index-wallpaper">
-    <img src="img/index/index-welcome.svg" width="459" height="353" alt="Welcome to the gorgeous SEDONA">
+    <img class="image-welcome" src="img/index/index-welcome.svg" width="459" height="353" alt="Welcome to the gorgeous SEDONA">
   </section>
 
   <section class="advantages-sedona">
-    <h2 class="visually-hidden">Преимущества</h2>
-    <p class="advantages-heading">Седона - небольшой городок в Аризоне,
-    заслуживающий большего!</p>
-    <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
-    <ul class="advantages">
-      <li>
+    <div class="advantage-intro">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <p class="advantages-heading">Седона - небольшой городок в Аризоне,
+      заслуживающий большего!</p>
+      <p class="advantages-discription">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+    </div>
+
+    <div class="advantages-column-1">
        <p><img src="img/index/index-1advantages.jpg" width="800" height="401" alt="Тут нет туристических аттракционов"></p>
        <p>№1</p>       
        <h3>Настоящий городок</h3>
        <p class="advantage-text">Седона-не аттракцион для туристов,
        там течет своя жизнь</p>
-      </li>
-      <li>
+    </div>
+    
+    <div class="advantages-column-3">
        <p><img src="img/index/index-2advantages.jpg" width="800" height="401" alt="Живописные места захватывают дух"></p>
        <p>№2</p>       
        <h3>Там есть <br> мост Дьявола</h3>
        <p class="advantage-text">Да, по нему можно пройти! Если конечно 
        вы осмелитесь</p>
-      </li>
-      <div class="advantages-background">
-      <li>
+    </div>
+
+    <div class="advantages-column-4">
+      <ul>
+        <li>
        <p>№3</p>       
        <h3>Небольшая площадь</h3>
        <p class="advantage-text">Все достопримечательности
@@ -68,9 +75,11 @@
        <p class="advantage-text">Большинство едет в Гранд-Каньон
        и толпится там</p>
       </li>
-      </div>
-    </ul>
-    <ul class="tips">
+      </ul>
+    </div>
+
+    <div class="tips-column-2">
+      <ul class="tips">
       <h2 class="visually-hidden">Советы</h2>
       <li>
        <h3>Жилье</h3>
@@ -90,7 +99,8 @@
        Производства!</p>
        <img src="img/index/index-icon-gifts.svg" width="64" height="76" alt="">
       </li>
-    </ul>
+      </ul>
+    </div>
   </section>
   <section class="find-hotel">
     <span class="question">Заинтересовались?</span>
@@ -139,5 +149,6 @@
     <img src="img/index/index-logo-footer.svg" width="115" height="41" alt="HTLM Academy"></a>
 </p>
 </footer>
+</div>
   </body>
 </html>
