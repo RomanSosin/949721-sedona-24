@@ -337,6 +337,7 @@ background-color: #ffffff;
 width: 1200px;
 margin: 0 auto;
 padding: 0;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 /* Временно для сетки */
 border: 2px dotted red;
@@ -344,12 +345,44 @@ border: 2px dotted red;
 
 .column-1 {
     width: 400px;
+    order: -1; 
 }
 
 .column-2 {
     width:290px;
+    background-color: #ffffff;
 }
 
 .column-3 {
     width: 400px;
+}
+
+.index-wallpaper {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-welcome {
+    align-self: center;
+    margin-top: 120px;
+    padding:0;
+
+}
+
+.advantage-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #ffffff;
+}
+
+.advantages-sedona {
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages-column-1 {
+    display: flex;
+    flex-direction: row-reverse;
 }
