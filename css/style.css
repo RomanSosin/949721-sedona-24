@@ -373,6 +373,7 @@ border: 2px dotted red;
     display: flex;
     flex-direction: column;
     align-items: center;
+    order: -4;
 
     background-color: #ffffff;
 
@@ -383,6 +384,7 @@ border: 2px dotted red;
 .advantages-sedona {
     display: flex;
     flex-direction: column;
+
     margin: 0;
     padding: 0;
 }
@@ -390,16 +392,16 @@ border: 2px dotted red;
 .advantages-column-1 {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
+    order: -3;
+    
     margin: 0;
     padding: 0;
- /* Временно для сетки */
-border: 2px dotted red;
 
 }
 
 .advantages-column-box-1 {
     width: 400px;
+    height: 256px;
     padding: 0;
     margin:0;
 
@@ -408,21 +410,29 @@ border: 2px dotted red;
     justify-content: center;
     align-items: center;
 
-    background-color: blue;
+    color: #ffffff;
+    background-color: #81b3d2;
 }
 
-.advantages-column-box-2 p {
-    margin: 0;
-    padding: 0;
-}
-
-.advantages-column-box-2 img {
-    margin: 0;
-    padding: 0;
+.advantages-column-box-1 h3 {
+    order: -2;
 }
 
 
 .advantages-column-3 {
-     /* Временно для сетки */
-border: 2px dotted red;
+    display: flex;
+    align-items: flex-start;
+    
+    margin: 0;
+    padding: 0;
+
+}
+
+.advantages-column-3 p {
+    margin: 0;
+    padding: 0;
+}
+
+.tips-column-2 {
+    order: -3;
 }
