@@ -115,13 +115,6 @@ text-align: center;
 width: 285px;
 }
 
- /*Задаем цвет фона блоку с преимущствами*/
-
- .advantages-background {
-     background-color: #eeeeee; 
- }
-
-
 .tips {
 list-style: none;
 }
@@ -240,7 +233,6 @@ line-height: 24px;
 
 .main-footer ul {
 list-style: none;
-text-align: center;
 }
 
 
@@ -542,3 +534,49 @@ border: 2px dotted red;
     margin-bottom: 50px;
 }
 
+                             /*   Footer Index */ 
+
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: transparent;
+}
+
+.social-footer {
+    display: flex;
+    justify-content: center;
+    
+    width: 200px; 
+
+    margin: 0;
+    padding: 0;
+      /* Временно для сетки */
+border: 2px dotted red;
+}
+
+.social-footer a {
+    background-color: blueviolet;
+    width: 550px;
+    height: 46px;
+}
+
+.social-footer li:nth-child(2) {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.social-footer img {
+    margin-left: 15px;
+    margin-top: 13px;
+}
+
+.footer-copyright {
+    display: flex;
+    align-items: center;
+}
+
+.footer-copyright span {
+    margin-right: 10px;
+}
