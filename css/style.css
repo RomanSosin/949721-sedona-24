@@ -307,6 +307,7 @@ width: 100%;
 background-color: #f2f2f2;
 }
 
+                                    /* Header */ 
 .main-navigation {
 border: 1px dotted red;
 display: flex;
@@ -331,6 +332,7 @@ border: 1px dotted red;
 background-color: #ffffff;
 }
 
+/*Поместим все соержимое HTML в контейнер*/
 .container {
 /* Задамем центровку контейнера*/ 
 width: 1200px;
@@ -342,244 +344,252 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 border: 2px dotted red;
 }
 
+/* Добавим HTML разметку column для оформления Header*/
 .column-1 {
-    width: 400px;
-    order: -1; 
+width: 400px;
+order: -1; 
 }
 
 .column-2 {
-    width:290px;
-    background-color: #ffffff;
+width: 290px;
+background-color: #ffffff;
 }
 
 .column-3 {
-    width: 400px;
+width: 400px;
 }
 
+
 .index-wallpaper {
-    display: flex;
-    flex-direction: column;
+display: flex;
+flex-direction: column;
 }
 
 .image-welcome {
-    align-self: center;
-    margin-top: 120px;
-    padding:0;
-
+align-self: center;
+margin-top: 120px;
+padding: 0;
 }
-
+                /* Advantages */
 .advantage-intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    order: -4;
+display: flex;
+flex-direction: column;
+align-items: center;
+order: -4;
 
-    background-color: #ffffff;
+background-color: #ffffff;
 
      /* Временно для сетки */
 border: 2px dotted red;
 }
 
 .advantages-sedona {
-    display: flex;
-    flex-direction: column;
+display: flex;
+flex-direction: column;
 
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
 }
 
 .advantages-column-1 {
-    display: flex;
-    flex-direction: row-reverse;
-    order: -3;
+display: flex;
+flex-direction: row-reverse;
+order: -3;
     
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
          /* Временно для сетки */
 border: 2px dotted red;
-
 }
 
 .advantages-column-box-1 {
-    width: 400px;
-    height: 256px;
-    padding: 0;
-    margin:0;
+width: 400px;
+height: 256px;
+padding: 0;
+margin:0;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 
-    color: #ffffff;
-    background-color: #81b3d2;
+color: #ffffff;
+background-color: #81b3d2;
 }
 
 .advantages-column-box-1 h3 {
-    order: -2;
+order: -2;
 }
 
 
 .advantages-column-3 {
-    display: flex;
-    align-items: flex-start;
+display: flex;
+align-items: flex-start;
     
-    margin: 0;
-    padding: 0;
-
+margin: 0;
+padding: 0;
 }
 
 .advantages-column-3 p {
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
 }
 
 .tips-column-2 {
-    order: -3;
+order: -3;
 }
 
+/* Общим флекс контейнер в Tips-column-2*/
 .tips {
-    display: flex;
-    justify-content: center;
+display: flex;
+justify-content: space-between;
 
-    margin: 0;
-    padding: 0;
+padding: 0;
+margin:0;
+
      /* Временно для сетки */
-border: 2px dotted red; 
+border: 2px dotted green;
+}
+
+.tips li {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+margin: 0;
+margin-top: 60px;
+margin-bottom: 85px;
+padding: 0;
+     /* Временно для сетки */
+border: 2px dotted blue; 
+}
+
+.tips img {
+order: -1;
 }
 
 .tips .tips-text {
-    text-align: center;
+text-align: center;
         /* Временно для сетки */
 border: 2px dotted red;
 }
 
 .tips h3 {
-    text-align: center;
+text-align: center;
 
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
         /* Временно для сетки */
 border: 2px dotted red;
 }
 
 
+/* Общим флекс контейнер в Advantages-column-4*/
 .advantages-column-box {
-    display: flex;
-    justify-content: space-between;
+display: flex;
+justify-content: space-between;
 
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
+    
 
     /* Временно для сетки */
-border: 2px dotted black;
+border: 2px dotted green;
 
-    background-color: #eeeeee;
+background-color: #eeeeee;
 }
 
+.advantages-column-box li {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+   /* Временно для сетки */
+border: 2px dotted blue; 
+
+}
 
 .advantages-column-box p,
 .advantages-column-box h3 {
-    text-align: center;
+text-align: center;
     /* Временно для сетки */
 border: 2px dotted red;
 }
 
 
-
-.advantages-column-box li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-    margin-right: 40px;
-    margin-left:40px;
-
-      /* Временно для сетки */
-border: 2px dotted red;
-}
-
-
-.advantages-column-box li:nth-child(2) {
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
 .advantages-column-box h3 {
-    order: -1;
+order: -1;
 }
 
 .find-hotel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+display: flex;
+flex-direction: column;
+align-items: center;
 
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
 
-    background-color: #ffffff;
+background-color: #ffffff;
 
     /* Временно для сетки */
 border: 2px dotted red;
 }
 
 .find-hotel .question {
-    margin-top: 55px;
+margin-top: 55px;
 }
 
 .find-hotel .book-text {
-    margin-bottom: 50px;
+margin-bottom: 50px;
 }
 
                              /*   Footer Index */ 
 
 .main-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+display: flex;
+justify-content: space-around;
+align-items: center;
 
-    background-color: transparent;
+background-color: transparent;
 }
 
 .social-footer {
-    display: flex;
-    justify-content: center;
+display: flex;
+justify-content: center;
     
-    width: 156px; 
+width: 156px; 
 
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
       /* Временно для сетки */
 border: 2px dotted red;
 }
 
 .social-footer li {
 
-    display: flex; 
-    justify-content: center;
-    align-items: center;
+display: flex; 
+justify-content: center;
+align-items: center;
 
-    background-color: #81b3d2;
+background-color: #81b3d2;
 
-    width: 46px;
-    height: 48px; 
+width: 46px;
+height: 48px; 
 
 }
 
 .social-footer li:nth-child(2) {
-    margin-left: 6px;
-    margin-right: 6px;
+margin-left: 6px;
+margin-right: 6px;
 }
 
 
 .footer-copyright {
-    display: flex;
-    align-items: center;
+display: flex;
+align-items: center;
 }
 
 .footer-copyright span {
-    margin-right: 10px;
+margin-right: 10px;
 }
