@@ -8,19 +8,22 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="catalog-page">
-<header class="main header">
-  <nav class="main-navigation">
-    <a class="main-header-logo" href="index.html">
-      <img src="img/index/index-logo.svg" width="140" height="72" alt="Логотип города Седона">
-    </a>
-  <ul class="site-navigation">
-    <li><a href="information.html">Информация</a></li>
-    <li><a href="gallery.html">Фото и Видио</a></li>
-    <li><a href="map.html">Карта штата</a></li>
-    <li class="site-navigation-curent"><a href="catalog.html">Гостиницы</a></li>
-  </ul>
-  </nav>
-</header>
+  <div class="container">
+    <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo column-2">
+        <img src="img/index/index-logo.svg" width="140" height="72" alt="Логотип города Седона">
+      </a>
+      <ul class="site-navigation column-1">
+        <li><a href="information.html">Информация</a></li>
+        <li><a href="gallery.html">Фото и Видио</a></li>
+      </ul>
+      <ul class="site-navigation column-3">
+        <li><a href="map.html">Карта штата</a></li>
+        <li class="site-navigation-curent"><a href="catalog.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+    </header>
 <main class="container">
     <section class="filter-catalog">
         <h1 class="visually-hidden">Фильтр для выборы жилья</h1>
@@ -103,5 +106,6 @@
     <img src="img/index/index-logo-footer.svg" width="115" height="41" alt="HTLM Academy"></a>
 </p>
 </footer>
+</div>
 </body>
 </html>
