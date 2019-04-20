@@ -313,7 +313,9 @@ border: 1px dotted red;
 display: flex;
 }
 
-.main-header-logo imng {
+.main-header-logo {
+position: absolute;
+left: 800px;
 border: 1px dotted red;  
 }
 
@@ -346,19 +348,14 @@ border: 2px dotted red;
 
 /* Добавим HTML разметку column для оформления Header*/
 .column-1 {
-width: 400px;
-order: -1; 
+width: 600px; 
 }
 
 .column-2 {
-width: 290px;
+width: 600px;
 background-color: #ffffff;
+margin-left: auto;
 }
-
-.column-3 {
-width: 400px;
-}
-
 
 .index-wallpaper {
 display: flex;
