@@ -148,8 +148,8 @@ background-color: #ffffff;
 position: absolute;
 width: 500px;
 height: 500px;
-
-margin: 0 auto;
+margin-left: auto;
+margin-right: auto; 
 }
 
     /*Стилизация шапки формы поиска отеля*/
@@ -161,8 +161,8 @@ text-align: center;
 
 margin: 0;
 
-padding-top: 20px;
-padding-bottom: 20px;
+padding-top: 26px;
+padding-bottom: 26px;
 
 
 background-color: #766357;
@@ -538,7 +538,7 @@ margin-top: 55px;
 }
 
 .find-hotel .book-text {
-margin-bottom: 50px;
+margin-bottom: 128px;
 }
 
                              /*   Footer Index */ 
