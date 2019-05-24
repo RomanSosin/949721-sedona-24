@@ -1,5 +1,6 @@
 body {
-    margin: 0;
+    margin:0;
+    padding: 0;
     width:1200px;
 
     /*Свойство параметров шрифта*/
@@ -21,6 +22,7 @@ a {
     text-decoration: none;
 }
 
+}
 h3 {
 font-size: 21px;
 line-height: 21px;
@@ -29,6 +31,14 @@ text-align: center;
 
 /*Устанавливаем размер контейнера для правильных переносов*/
 width: 160px;
+}
+
+.visually-hidden {
+    font-size: 0;
+    width: 0;
+    height: 0;
+    display: hidden;
+
 }
 
 .button {
@@ -74,17 +84,14 @@ color: rgba(0, 0, 0, 0.3);
 }
 
 .index-wallpaper {
-height: 800px;
+margin-top: 0;
+height: 510px;
 width: 1200px;
     background-color: #e4f1fa;
     background-image:
         url("img/index-background-photo.jpg");
-        background-size: contain;
-    /*Contain 
-    - пропорции изображения сохраняются;
-    - изображению задаются максимально возможные размеры, при которых оно и по ширине, и по высоте полностью помещается в границы фона;
-    - изображение может не закрывать всю фоновую область блока, если пропорции изображения и блока разные.*/
-        background-position: top center;
+        background-size: cover;
+        background-position: 0 -55px;
         background-repeat: no-repeat;
 }
 
@@ -144,14 +151,21 @@ line-height: 24px;
     /* Стилизация формы бронирования*/
 .find-hotel-index-filter {
 background-color: #ffffff;
-    /*Определяем позиционирование блока*/
-position: absolute;
-width: 500px;
-height: 500px;
+    /*Определяем размеры блока*/
+width: 570px;
+height: 395px;
 margin-left: auto;
 margin-right: auto; 
+
 }
 
+.map {
+    background-image: url("img/index-map.jpg");
+    background-repeat: no-repeat;
+    height: 450px;
+   
+
+}
     /*Стилизация шапки формы поиска отеля*/
 .find-hotel-index {
 color: #ffffff;
@@ -163,8 +177,7 @@ margin: 0;
 
 width: 400px;
 
-padding: 26px 80px;
-padding-bottom: 26px;
+padding:26px 85px;
 
 
 background-color: #766357;
@@ -309,15 +322,27 @@ width: 100%;
 background-color: #f2f2f2;
 }
 
+/*Поместим все соержимое HTML в контейнер*/
+.container {
+    /* Задамем центровку контейнера*/ 
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
                                     /* Header */ 
 .main-navigation {
-border: 1px dotted red;
+border: 1px dotted rgb(158, 255, 187);
 display: flex;
+margin: 0;
 }
 
 .main-header-logo {
 position: absolute;
-left: 800px;
+left: 700px;
+top: 10px;
 border: 1px dotted red;  
 }
 
@@ -336,50 +361,58 @@ border: 1px dotted red;
 background-color: #ffffff;
 }
 
-/*Поместим все соержимое HTML в контейнер*/
-.container {
-/* Задамем центровку контейнера*/ 
-width: 1200px;
-margin: 0 auto;
-padding: 0;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-/* Временно для сетки */
-border: 2px dotted red;
-}
 
 /* Добавим HTML разметку column для оформления Header*/
 .column-1 {
 width: 600px; 
+margin: 0;
 }
 
 .column-2 {
 width: 600px;
 background-color: #ffffff;
-margin-left: auto;
+margin: 0;
 }
 
 .index-wallpaper {
 display: flex;
 flex-direction: column;
+
+margin: 0;
 }
 
 .image-welcome {
-align-self: center;
-margin-top: 120px;
-padding: 0;
+    align-self: center;
+    margin-top: 76px;
+    margin-bottom: 0;
+    padding: 0;
+
+    border: 2px solid yellow;
 }
+
+.index-wallpaper::after {
+    content:"";
+    background-image: url("img/index-background-white-line.svg");
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    margin-top: 21px;
+
+    width: 1200px;
+    height: 120px;
+
+}
+
+
                 /* Advantages */
 .advantage-intro {
 display: flex;
 flex-direction: column;
 align-items: center;
 order: -4;
+margin: 0;
 
 background-color: #ffffff;
 
-     /* Временно для сетки */
-border: 2px dotted red;
 }
 
 .advantages-sedona {
@@ -540,7 +573,7 @@ margin-top: 55px;
 }
 
 .find-hotel .book-text {
-margin-bottom: 128px;
+margin-bottom: 42px;
 }
 
                              /*   Footer Index */ 
