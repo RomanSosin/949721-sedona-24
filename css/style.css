@@ -83,10 +83,15 @@ color: #81b3d2;
 color: rgba(0, 0, 0, 0.3);
 }
 
+                                        /* Шапка Index*/
 .index-wallpaper {
 margin-top: 0;
 height: 510px;
 width: 1200px;
+
+padding: 0;
+margin: 0;
+
     background-color: #e4f1fa;
     background-image:
         url("img/index-background-photo.jpg");
@@ -94,6 +99,35 @@ width: 1200px;
         background-position: 0 -55px;
         background-repeat: no-repeat;
 }
+
+.index-wallpaper::after {
+    content:"";
+    background-image: url("img/index-background-white-line.svg");
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    margin: 0px;
+    display: block;
+    position: relative;
+    bottom: 0px;
+
+    width: 1200px;
+    height: 125px;
+
+}
+
+.image-welcome {
+    width: 460px;
+    align-self: center;
+    margin-right: auto;
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+
+    border: 2px solid yellow;
+}
+
+
 
     /*Стилизауем блок Advantages*/
 .advantages-heading {
@@ -373,35 +407,6 @@ width: 600px;
 background-color: #ffffff;
 margin: 0;
 }
-
-.index-wallpaper {
-display: flex;
-flex-direction: column;
-
-margin: 0;
-}
-
-.image-welcome {
-    align-self: center;
-    margin-top: 76px;
-    margin-bottom: 0;
-    padding: 0;
-
-    border: 2px solid yellow;
-}
-
-.index-wallpaper::after {
-    content:"";
-    background-image: url("img/index-background-white-line.svg");
-    background-repeat: no-repeat;
-    background-size: 1200px;
-    margin-top: 21px;
-
-    width: 1200px;
-    height: 120px;
-
-}
-
 
                 /* Advantages */
 .advantage-intro {
