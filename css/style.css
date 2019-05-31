@@ -85,6 +85,9 @@ color: rgba(0, 0, 0, 0.3);
 
                                         /* Шапка Index*/
 .index-wallpaper {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 margin-top: 0;
 height: 510px;
 width: 1200px;
@@ -106,21 +109,17 @@ margin: 0;
     background-repeat: no-repeat;
     background-size: 1200px;
     margin: 0px;
-    display: block;
-    position: relative;
-    bottom: 0px;
 
     width: 1200px;
-    height: 125px;
+    height: 58px;
 
 }
 
 .image-welcome {
     width: 460px;
-    align-self: center;
     margin-right: auto;
-    margin-left: 30px;
-    margin-top: 0;
+    margin-left: auto;
+    margin-top: 20px;
     margin-bottom: 0;
     padding: 0;
 
@@ -368,16 +367,15 @@ background-color: #f2f2f2;
 
                                     /* Header */ 
 .main-navigation {
-border: 1px dotted rgb(158, 255, 187);
 display: flex;
 margin: 0;
 }
 
 .main-header-logo {
 position: absolute;
-left: 700px;
-top: 10px;
-border: 1px dotted red;  
+top: 0;
+left: 50%;
+margin-left: -70px; 
 }
 
 .site-navigation {
@@ -385,13 +383,14 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 
+
+padding-left: 0;
+padding-right: 0;
 padding-top: 16px;
 padding-bottom: 18px;
-padding-left: 71px;
-padding-right: 73px;
 margin: 0;
 
-border: 1px dotted red; 
+border: 1px dotted green; 
 background-color: #ffffff;
 }
 
@@ -400,12 +399,15 @@ background-color: #ffffff;
 .column-1 {
 width: 600px; 
 margin: 0;
+padding-left: 75px;
+padding-right: 190px;
 }
 
 .column-2 {
 width: 600px;
-background-color: #ffffff;
 margin: 0;
+padding-left: 199px;
+padding-right: 74px;
 }
 
                 /* Advantages */
