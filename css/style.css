@@ -193,12 +193,12 @@ margin-right: auto;
 }
 
 .map {
-    background-image: url("img/index-map.jpg");
-    background-repeat: no-repeat;
-    height: 450px;
-   
-
+    position: relative;
+    z-index: -1;
+    top: -100px;
+    left: -315px;
 }
+
     /*Стилизация шапки формы поиска отеля*/
 .find-hotel-index {
 color: #ffffff;
@@ -211,7 +211,6 @@ margin: 0;
 width: 400px;
 
 padding:26px 85px;
-
 
 background-color: #766357;
 }
@@ -232,7 +231,7 @@ background-color: #ebebeb;
     background-color: #ffffff;
 }
 
-    /*Цвет фона кнопок форм при наведении и фокусе*/
+            /*Цвет фона кнопок форм при наведении и фокусе*/
 button button-minus,
 button button-plus {
 }
@@ -246,7 +245,7 @@ font-weight: 700;
 background-color: #f2f2f2;
 }
 
-    /*Стилизуем кнопку "Найти" в форме поиска отеля*/
+            /*Стилизуем кнопку "Найти" в форме поиска отеля*/
 .button.button-find {
 font-family: inherit;
 text-transform: uppercase;
@@ -261,7 +260,7 @@ background-color: #81b3d2;
     /*Убираем рамки у кнопки по умолчанию*/
 border: none;
 }
-    /*Задаем состояние кнопки при наведении и нажатии*/
+            /*Задаем состояние кнопки при наведении и нажатии*/
 .button.button-find:hover {
 background-color: #669ec0;
 }
@@ -272,13 +271,16 @@ background-color: #5496bd;
 }
 
 
-    /*Стилизуем Футер*/
+                /*Стилизуем Футер*/
 .social-teg {
 font-size: 21px;
 line-height: 24px;
 
 }
 
+.main-footer {
+    background-color: rgba(255, 255, 255, 0.8);
+}
 .main-footer ul {
 list-style: none;
 }
@@ -326,7 +328,7 @@ background-color: #503e33;
 color: rgba(255, 255, 255, 0.3);
 }
 
-    /* Стилизуем кнопку "Подробнее"*/
+            /* Стилизуем кнопку "Подробнее"*/
 .button-about {
 font-size: 14px;
 line-height: 21px;
@@ -359,7 +361,7 @@ background-color: #f2f2f2;
 .container {
     /* Задамем центровку контейнера*/ 
     width: 1200px;
-    margin: 0 auto;
+    margin: 0px auto;
     padding: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -590,7 +592,11 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 
-background-color: transparent;
+/* Временно для сетки */
+height: 120px;
+
+margin-top: 150px;
+
 }
 
 .social-footer {
@@ -601,6 +607,7 @@ width: 156px;
 
 margin: 0;
 padding: 0;
+
       /* Временно для сетки */
 border: 2px dotted red;
 }
