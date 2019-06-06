@@ -1,22 +1,22 @@
 body {
     margin:0;
     padding: 0;
-    width:1200px;
 
-    /*Свойство параметров шрифта*/
+    width: 100%;
+/*Свойство параметров шрифта*/
 
-font-family: "PT Sans", Arial, sans-serif;
-font-size: 14px;
-line-height: 21px;
-font-weight: 400;
-color: #000000;
-text-transform: uppercase;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
 
-    /*Фон*/
-background-color: #ffffff;
+/*Фон*/
+    background-color: #ffffff;
 }
 
-    /*Описываем глобальные стили*/
+/*Описываем глобальные стили*/
 
 a {
     text-decoration: none;
@@ -24,13 +24,13 @@ a {
 
 }
 h3 {
-font-size: 21px;
-line-height: 21px;
-font-weight: 700;
-text-align: center;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: center;
 
 /*Устанавливаем размер контейнера для правильных переносов*/
-width: 160px;
+    width: 160px;
 }
 
 .visually-hidden {
@@ -38,7 +38,6 @@ width: 160px;
     width: 0;
     height: 0;
     display: hidden;
-
 }
 
 .button {
@@ -51,49 +50,89 @@ width: 160px;
 }
 
 
-    /* Устанавливаем наследование шрифтов в поля ввода формы*/
+/* Устанавливаем наследование шрифтов в поля ввода формы*/
 input {
-font: inherit;
+    font: inherit;
 }
 
 
-    /*блок Header*/
+                            /*блок Header*/
 .main-navigation {
-font-size: 14px;
-line-height: 26px;
-font-weight: 700;
-color: #000000;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+
+    display: flex;
+    margin: 0;
 }
 
 .site-navigation {
-    /*Убираем маркеры из списков*/
-list-style: none; 
+/*Убираем маркеры из списков*/
+    list-style: none; 
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    margin: 0;
+
+    border: 1px dotted green; 
+    
+}
+
+
+.main-header-logo {
+/*Абсолютное позиционирование логотипа и выравнивание по центру относительно container*/
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -70px; 
+}
+
+/* Добавим HTML разметку column для оформления Header*/
+.column-1 {
+    width: 600px; 
+    margin: 0;
+    padding-left: 75px;
+    padding-right: 190px;
+}
+    
+.column-2 {
+    width: 600px;
+    margin: 0;
+    padding-left: 199px;
+    padding-right: 74px;
 }
 
 .site-navigation a {
-    /*Устанавливаем цвет ссылок*/
-color: #000000;
+/*Устанавливаем цвет ссылок*/
+    color: #000000;
 }
 
 .site-navigation a:hover {
-color: #81b3d2; 
+    color: #81b3d2; 
 }
 
 .site-navigation a:focus {
-color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
 }
 
-                                        /* Шапка Index*/
+            /*шапка в Index*/
 .index-wallpaper {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-margin-top: 0;
-height: 510px;
-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0;
+    height: 510px;
+    width: 1200px;
 
-padding: 0;
-margin: 0;
+    padding: 0;
+    margin: 0;
 
     background-color: #e4f1fa;
     background-image:
@@ -111,7 +150,7 @@ margin: 0;
     margin: 0px;
 
     width: 1200px;
-    height: 58px;
+    height: 57px;
 
 }
 
@@ -128,24 +167,20 @@ margin: 0;
 
 
 
-    /*Стилизауем блок Advantages*/
+                            /*блок Advantages*/
 .advantages-heading {
-font-size: 21px;
-line-height: 26px;
-font-weight: 700;
-text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
     
-    /*Устанавливаем ширину для правильных переносов текста*/
+/*Устанавливаем ширину для правильных переносов текста*/
     width: 440px   
 }
 
-.advantages-heading p {
-font-size: 14px;
-line-height: 26px;
-}
-
-.advantages-column-box {
-list-style: none;
+.advantages-discription {
+    font-size: 14px;
+    line-height: 26px;
 }
 
     /*Выравниваем текст и задаем ширину контейнера для переносов*/
@@ -351,11 +386,6 @@ background-color: #f2f2f2;
                                      /*---Сеточные Стили---*/
                                       /* Index page */
 
-body {
-width: 100%;
-
-background-color: #f2f2f2;
-}
 
 /*Поместим все соержимое HTML в контейнер*/
 .container {
@@ -366,51 +396,6 @@ background-color: #f2f2f2;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-
-                                    /* Header */ 
-.main-navigation {
-display: flex;
-margin: 0;
-}
-
-.main-header-logo {
-position: absolute;
-top: 0;
-left: 50%;
-margin-left: -70px; 
-}
-
-.site-navigation {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-
-
-padding-left: 0;
-padding-right: 0;
-padding-top: 16px;
-padding-bottom: 18px;
-margin: 0;
-
-border: 1px dotted green; 
-background-color: #ffffff;
-}
-
-
-/* Добавим HTML разметку column для оформления Header*/
-.column-1 {
-width: 600px; 
-margin: 0;
-padding-left: 75px;
-padding-right: 190px;
-}
-
-.column-2 {
-width: 600px;
-margin: 0;
-padding-left: 199px;
-padding-right: 74px;
-}
 
                 /* Advantages */
 .advantage-intro {
