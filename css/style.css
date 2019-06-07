@@ -183,11 +183,76 @@ input {
     line-height: 26px;
 }
 
-    /*Выравниваем текст и задаем ширину контейнера для переносов*/
+/*Выравниваем текст и задаем ширину контейнера для переносов*/
 .advantage-text {
-text-align: center;
+    text-align: center;
 
-width: 285px;
+    width: 285px;
+}
+
+.advantages-sedona {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.advantage-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: -4;
+    margin: 0;
+    padding: 0;
+
+    background-color: #ffffff; 
+}
+
+.advantages-column-1 {
+    display: flex;
+    flex-direction: row-reverse;
+    order: -3;
+   
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-column-box-1 {
+    width: 400px;
+    height: 256px;
+    padding: 0;
+    margin:0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+    
+.advantages-column-box-1 h3 {
+    order: -2;
+}
+    
+    
+.advantages-column-3 {
+    display: flex;
+    align-items: flex-start;
+        
+    margin: 0;
+    padding: 0;
+}
+    
+.advantages-column-3 p {
+    margin: 0;
+    padding: 0;
+}
+    
+.tips-column-2 {
+    order: -3;
 }
 
 .tips {
@@ -250,14 +315,14 @@ padding:26px 85px;
 background-color: #766357;
 }
 
-    /*Жирный шрифт для подписей форм*/
+/*Жирный шрифт для подписей форм*/
 .find-hotel-index-form input {
 font-weight: 700;
 
 background-color: #f2f2f2;
 }
 
-    /*Цвет фона полей форм при наведении и фокусе*/
+/*Цвет фона полей форм при наведении и фокусе*/
 .find-hotel-index-form input:hover {
 background-color: #ebebeb;
 }
@@ -266,7 +331,7 @@ background-color: #ebebeb;
     background-color: #ffffff;
 }
 
-            /*Цвет фона кнопок форм при наведении и фокусе*/
+/*Цвет фона кнопок форм при наведении и фокусе*/
 button button-minus,
 button button-plus {
 }
@@ -280,7 +345,7 @@ font-weight: 700;
 background-color: #f2f2f2;
 }
 
-            /*Стилизуем кнопку "Найти" в форме поиска отеля*/
+/*Стилизуем кнопку "Найти" в форме поиска отеля*/
 .button.button-find {
 font-family: inherit;
 text-transform: uppercase;
@@ -397,73 +462,6 @@ background-color: #f2f2f2;
 }
 
 
-                /* Advantages */
-.advantage-intro {
-display: flex;
-flex-direction: column;
-align-items: center;
-order: -4;
-margin: 0;
-
-background-color: #ffffff;
-
-}
-
-.advantages-sedona {
-display: flex;
-flex-direction: column;
-
-margin: 0;
-padding: 0;
-}
-
-.advantages-column-1 {
-display: flex;
-flex-direction: row-reverse;
-order: -3;
-    
-margin: 0;
-padding: 0;
-         /* Временно для сетки */
-border: 2px dotted red;
-}
-
-.advantages-column-box-1 {
-width: 400px;
-height: 256px;
-padding: 0;
-margin:0;
-
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
-color: #ffffff;
-background-color: #81b3d2;
-}
-
-.advantages-column-box-1 h3 {
-order: -2;
-}
-
-
-.advantages-column-3 {
-display: flex;
-align-items: flex-start;
-    
-margin: 0;
-padding: 0;
-}
-
-.advantages-column-3 p {
-margin: 0;
-padding: 0;
-}
-
-.tips-column-2 {
-order: -3;
-}
 
 /* Общим флекс контейнер в Tips-column-2*/
 .tips {
@@ -624,7 +622,7 @@ align-items: center;
 .footer-copyright span {
 margin-right: 10px;
 }
-                                                            /* Catalog page */
+                                       /* Catalog page */
 .offers-hosts {
     display: flex;
     flex-direction: column;
