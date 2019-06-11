@@ -56,7 +56,7 @@ input {
 }
 
 
-                            /*блок Header*/
+                            /*блок Main-Header*/
 .main-navigation {
     font-size: 14px;
     line-height: 26px;
@@ -278,7 +278,65 @@ input {
     margin: 0;
     padding: 0;
 }
+
+/* Общий флекс контейнер в Advantages-column-4*/
+.advantages-column-box {
+display: flex;
+justify-content: space-between;
+
+margin: 0;
+padding: 0;
     
+
+    /* Временно для сетки */
+border: 2px dotted green;
+
+background-color: #eeeeee;
+}
+
+.advantages-column-box li {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+   /* Временно для сетки */
+border: 2px dotted blue; 
+
+}
+
+.advantages-column-box p,
+.advantages-column-box h3 {
+text-align: center;
+    /* Временно для сетки */
+border: 2px dotted red;
+}
+
+
+.advantages-column-box h3 {
+order: -1;
+}
+
+.find-hotel {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+margin: 0;
+padding: 0;
+
+background-color: #ffffff;
+
+    /* Временно для сетки */
+border: 2px dotted red;
+}
+
+.find-hotel .question {
+margin-top: 55px;
+}
+
+.find-hotel .book-text {
+margin-bottom: 42px;
+}
 
 
 .tips-column-2 {
@@ -538,65 +596,6 @@ padding: 0;
 border: 2px dotted red;
 }
 
-
-/* Общим флекс контейнер в Advantages-column-4*/
-.advantages-column-box {
-display: flex;
-justify-content: space-between;
-
-margin: 0;
-padding: 0;
-    
-
-    /* Временно для сетки */
-border: 2px dotted green;
-
-background-color: #eeeeee;
-}
-
-.advantages-column-box li {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-   /* Временно для сетки */
-border: 2px dotted blue; 
-
-}
-
-.advantages-column-box p,
-.advantages-column-box h3 {
-text-align: center;
-    /* Временно для сетки */
-border: 2px dotted red;
-}
-
-
-.advantages-column-box h3 {
-order: -1;
-}
-
-.find-hotel {
-display: flex;
-flex-direction: column;
-align-items: center;
-
-margin: 0;
-padding: 0;
-
-background-color: #ffffff;
-
-    /* Временно для сетки */
-border: 2px dotted red;
-}
-
-.find-hotel .question {
-margin-top: 55px;
-}
-
-.find-hotel .book-text {
-margin-bottom: 42px;
-}
 
                              /*   Footer Index */ 
 
