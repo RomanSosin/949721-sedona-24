@@ -182,6 +182,7 @@ input {
     flex-direction: column;
     align-items: center;
     order: -4;
+
     margin: 0;
     padding: 0;
 
@@ -194,6 +195,8 @@ input {
     font-weight: 700;
     text-align: center;
     
+    margin-top: 52px;
+
 /*Устанавливаем ширину для правильных переносов текста*/
     width: 440px   
 }
@@ -201,6 +204,8 @@ input {
 .advantages-discription {
     font-size: 14px;
     line-height: 26px;
+
+    margin-bottom: 44px;
 }
 
 .advantages-column-1 {
@@ -281,133 +286,159 @@ input {
 
 /* Общий флекс контейнер в Advantages-column-4*/
 .advantages-column-box {
-display: flex;
-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
     
-
-    /* Временно для сетки */
-border: 2px dotted green;
-
-background-color: #eeeeee;
+    background-color: #eeeeee;
 }
 
 .advantages-column-box li {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-   /* Временно для сетки */
-border: 2px dotted blue; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+/* Временно для сетки */
+    border: 2px dotted blue; 
 
 }
 
 .advantages-column-box p,
 .advantages-column-box h3 {
-text-align: center;
-    /* Временно для сетки */
-border: 2px dotted red;
+
+/* Временно для сетки */
+    border: 2px dotted red;
 }
 
 
 .advantages-column-box h3 {
-order: -1;
+    order: -1;
 }
 
-.find-hotel {
-display: flex;
-flex-direction: column;
-align-items: center;
-
-margin: 0;
-padding: 0;
-
-background-color: #ffffff;
-
-    /* Временно для сетки */
-border: 2px dotted red;
-}
-
-.find-hotel .question {
-margin-top: 55px;
-}
-
-.find-hotel .book-text {
-margin-bottom: 42px;
-}
-
-
+/* Общий флекс контейнер в Tips-column-2*/
 .tips-column-2 {
     order: -3;
 }
 
-.tips {
-    list-style: none;
-}
-
 .tips-text {
-text-align: center;
-
-width: 290px;
+/*Устанавливаем ширину для правильных переносов текста*/
+    width: 290px;
 }
 
+.tips {
+    display: flex;
+    justify-content: space-around;
 
+    padding: 0;
+    margin:0;
+    
+         /* Временно для сетки */
+    border: 2px dotted green;
+}
+    
+.tips li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 85px;
+    padding: 0;
+         /* Временно для сетки */
+    border: 2px dotted blue; 
+}
+    
+.tips img {
+    order: -1;
+}
+    
+.tips .tips-text {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+/* Временно для сетки */
+}
+    
+.tips h3 {
+    text-align: center;
+    
+    margin: 0;
+    margin-top: 22.5px;
+    margin-bottom: 21px;
+    padding: 0;
+/* Временно для сетки */
+    border: 2px dotted red;
+}
+
+                        /*блок Find-hotel*/
 .find-hotel {
-text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #ffffff;
+
+    /* Временно для сетки */
+    border: 2px dotted red;
 }
 
-.question {
-font-size: 30px;
-font-weight: 700;
-line-height: 36px;
+.find-hotel .question {
+    margin-top: 40px;
+    margin-bottom: 8px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
 }
 
-.book-text {
-font-size: 14px;
-line-height: 24px;
+.find-hotel .book-text {
+    margin-bottom: 42px;
+    font-size: 14px;
+    line-height: 24px;
 }
 
-    /* Стилизация формы бронирования*/
+
+
+
+                        /* блок Find-hotel-index-filter Форма бронирования*/
 .find-hotel-index-filter {
 background-color: #ffffff;
     /*Определяем размеры блока*/
 width: 570px;
-height: 395px;
+height: 481px;
 margin-left: auto;
 margin-right: auto; 
 
 }
 
-.map {
-    position: relative;
-    z-index: -1;
-    top: -100px;
-    left: -315px;
-}
 
     /*Стилизация шапки формы поиска отеля*/
 .find-hotel-index {
-color: #ffffff;
-font-size: 18px;
-line-height: 21px;
-text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
 
-margin: 0;
+    margin: 0;
+    padding:26px 85px;
 
-width: 400px;
-
-padding:26px 85px;
-
-background-color: #766357;
+    background-color: #766357;
 }
 
 /*Жирный шрифт для подписей форм*/
 .find-hotel-index-form input {
-font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
 
-background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
 /*Цвет фона полей форм при наведении и фокусе*/
@@ -425,39 +456,39 @@ button button-plus {
 }
 
 
-.find-hotel-index-form input {
-font-size: 14px;
-line-height: 26px;
-font-weight: 700;
-
-background-color: #f2f2f2;
-}
-
 /*Стилизуем кнопку "Найти" в форме поиска отеля*/
 .button.button-find {
-font-family: inherit;
-text-transform: uppercase;
-font-size: 21px;
-line-height: 26px;
-font-weight: 700;
-color: #ffffff;
-vertical-align: center;
-text-align: center;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    vertical-align: center;
+    text-align: center;
 
-background-color: #81b3d2;
-    /*Убираем рамки у кнопки по умолчанию*/
-border: none;
+    background-color: #81b3d2;
+/*Убираем рамки у кнопки по умолчанию*/
+    border: none;
 }
-            /*Задаем состояние кнопки при наведении и нажатии*/
+/*Задаем состояние кнопки при наведении и нажатии*/
 .button.button-find:hover {
-background-color: #669ec0;
+    background-color: #669ec0;
 }
 .button.button-find:active {
-color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.3);
 
-background-color: #5496bd;
+    background-color: #5496bd;
 }
 
+/* Распологаем карту относительно блока Find-hotel-index-filter*/
+.map {
+    position: relative;
+    width: 1200px;
+    z-index: -1;
+    top: -99px;
+    left: -500px;
+}
 
                 /*Стилизуем Футер*/
 .social-teg {
@@ -550,51 +581,6 @@ background-color: #f2f2f2;
 }
 
 
-
-/* Общим флекс контейнер в Tips-column-2*/
-.tips {
-display: flex;
-justify-content: space-between;
-
-padding: 0;
-margin:0;
-
-     /* Временно для сетки */
-border: 2px dotted green;
-}
-
-.tips li {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
-margin: 0;
-margin-top: 60px;
-margin-bottom: 85px;
-padding: 0;
-     /* Временно для сетки */
-border: 2px dotted blue; 
-}
-
-.tips img {
-order: -1;
-}
-
-.tips .tips-text {
-text-align: center;
-        /* Временно для сетки */
-border: 2px dotted red;
-}
-
-.tips h3 {
-text-align: center;
-
-margin: 0;
-padding: 0;
-        /* Временно для сетки */
-border: 2px dotted red;
-}
 
 
                              /*   Footer Index */ 
