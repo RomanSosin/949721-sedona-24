@@ -484,12 +484,70 @@ button button-plus {
 /* Распологаем карту относительно блока Find-hotel-index-filter*/
 .map {
     position: relative;
+    overflow:hidden;
+
+    margin: 0;
+    padding: 0;
+
     width: 1200px;
+    height:676px;
     z-index: -1;
-    top: -99px;
-    left: -500px;
+    top: -93px;
+    left: -315px;
 }
 
+                        /* Footer Index */ 
+
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+                                
+/* Временно для сетки */
+    height: 120px;
+    margin-top: 150px;
+}
+                                
+.social-footer {
+    display: flex;
+    justify-content: center;
+    width: 156px; 
+                                
+    margin: 0;
+    padding: 0;
+                                
+/* Временно для сетки */
+    border: 2px dotted red;
+}
+                                
+.social-footer li {
+                                
+    display: flex; 
+    justify-content: center;                           
+    background-color: #81b3d2;
+                                
+    width: 46px;
+    height: 48px;                                
+}
+
+.social-footer img {
+    align-items: baseline;
+}
+                                
+.social-footer li:nth-child(2) {
+margin-left: 6px;
+margin-right: 6px;
+}
+                                
+                                
+                                .footer-copyright {
+                                display: flex;
+                                align-items: center;
+                                }
+                                
+                                .footer-copyright span {
+                                margin-right: 10px;
+                                }
                 /*Стилизуем Футер*/
 .social-teg {
 font-size: 21px;
@@ -583,60 +641,7 @@ background-color: #f2f2f2;
 
 
 
-                             /*   Footer Index */ 
 
-.main-footer {
-display: flex;
-justify-content: space-around;
-align-items: center;
-
-/* Временно для сетки */
-height: 120px;
-
-margin-top: 150px;
-
-}
-
-.social-footer {
-display: flex;
-justify-content: center;
-    
-width: 156px; 
-
-margin: 0;
-padding: 0;
-
-      /* Временно для сетки */
-border: 2px dotted red;
-}
-
-.social-footer li {
-
-display: flex; 
-justify-content: center;
-align-items: center;
-
-background-color: #81b3d2;
-
-width: 46px;
-height: 48px; 
-
-}
-
-.social-footer li:nth-child(2) {
-margin-left: 6px;
-margin-right: 6px;
-}
-
-
-.footer-copyright {
-display: flex;
-align-items: center;
-}
-
-.footer-copyright span {
-margin-right: 10px;
-}
                                        /* Catalog page */
 .offers-hosts {
     display: flex;
