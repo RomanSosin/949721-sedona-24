@@ -409,13 +409,13 @@ input {
 
                         /* блок Find-hotel-index-filter Форма бронирования*/
 .find-hotel-index-filter {
+position: relative;
 background-color: #ffffff;
     /*Определяем размеры блока*/
 width: 570px;
-height: 481px;
+height: 480px;
 margin-left: auto;
 margin-right: auto; 
-
 }
 
 
@@ -432,6 +432,9 @@ margin-right: auto;
     background-color: #766357;
 }
 
+.find-hotel-index-form {
+margin: 0;
+}
 /*Жирный шрифт для подписей форм*/
 .find-hotel-index-form input {
     font-size: 14px;
@@ -483,29 +486,31 @@ button button-plus {
 
 /* Распологаем карту относительно блока Find-hotel-index-filter*/
 .map {
-    position: relative;
+    position: absolute; 
     overflow:hidden;
 
     margin: 0;
     padding: 0;
 
     width: 1200px;
-    height:676px;
-    z-index: -1;
-    top: -93px;
+    height: 680px;
+    z-index: -3;
+    top: 73px;
     left: -315px;
 }
 
-                        /* Footer Index */ 
+
+
+                        /* блок Footer Index */ 
 
 .main-footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-                                
+    
 /* Временно для сетки */
     height: 120px;
-    margin-top: 150px;
+    margin-top: 75px;
 }
                                 
 .social-footer {
@@ -520,35 +525,32 @@ button button-plus {
     border: 2px dotted red;
 }
                                 
-.social-footer li {
-                                
+.social-footer li {            
     display: flex; 
-    justify-content: center;                           
+    justify-content: center;
+    align-items: center;                          
     background-color: #81b3d2;
                                 
     width: 46px;
     height: 48px;                                
 }
 
-.social-footer img {
-    align-items: baseline;
-}
                                 
 .social-footer li:nth-child(2) {
 margin-left: 6px;
 margin-right: 6px;
 }
                                 
+.footer-copyright {
+    display: flex;
+    align-items: center;
+}
                                 
-                                .footer-copyright {
-                                display: flex;
-                                align-items: center;
-                                }
-                                
-                                .footer-copyright span {
-                                margin-right: 10px;
-                                }
-                /*Стилизуем Футер*/
+.footer-copyright span {
+margin-right: 10px;
+}
+
+/*Стилизуем Футер*/
 .social-teg {
 font-size: 21px;
 line-height: 24px;
@@ -589,6 +591,8 @@ color: #81b3d2;
 color: rgba(0, 0, 0, 0.3);
 }
 
+
+
     /* Стилизуем кнопку "Забронировать"*/
 .button-book {
 font-size: 14px;
@@ -605,7 +609,7 @@ background-color: #503e33;
 color: rgba(255, 255, 255, 0.3);
 }
 
-            /* Стилизуем кнопку "Подробнее"*/
+/* Стилизуем кнопку "Подробнее"*/
 .button-about {
 font-size: 14px;
 line-height: 21px;
