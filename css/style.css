@@ -33,11 +33,31 @@ h3 {
     width: 160px;
 }
 
-.visually-hidden {
-    font-size: 0;
-    width: 0;
-    height: 0;
-    display: hidden;
+img {
+/* Задаем ширину для картинок не больше чем ширина родителя от переполнения за границы родителя*/
+    max-width: 100%;
+    height: auto;
+}
+
+/* Скрываем объекты для читалок */
+.visually-hidden:not(:focus):not(:active),
+/* Скрываем элементы форм перед стилизацией. Лучше сделать отдельно!!!*/
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+/* Убираем из потока*/
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button {
